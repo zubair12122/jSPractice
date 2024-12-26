@@ -1,3 +1,5 @@
+// control flow
+//if else
 let userRole = prompt("who are you select 1 for admin and 2 for manger");
 let accessLevel;
 
@@ -9,6 +11,7 @@ if (userRole === "1") {
   accessLevel = "no access granted";
 }
 console.log("access level " + accessLevel);
+// nested if else
 
 let isLoggedin = false;
 let UserMessage;
@@ -23,6 +26,7 @@ if (isLoggedin) {
   UserMessage = "You are not logged in";
 }
 console.log("Message for user" + UserMessage);
+// switch
 
 let userType = "subscriber";
 let userCategory;
@@ -39,3 +43,10 @@ switch (userType) {
     break;
 }
 console.log("User Category:", userCategory);
+
+// turnary operator
+let isAuthenticated = false;
+let authenticationStatus = isAuthenticated
+  ? "Authenticated"
+  : "Not authenticated";
+console.log("Authentication Status:", authenticationStatus);
